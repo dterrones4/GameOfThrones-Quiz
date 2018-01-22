@@ -116,7 +116,7 @@ function main(){
     $('.js-answers').empty();
     for(let i = 0; i < position.answers.length; i++){
       let answerHTML =`<label class='answer'>
-        <input type="radio" name="option" value='${position.answers[i]}' required>
+        <input type="radio" name="option" aria-label='answer' value='${position.answers[i]}' required>
         <span>${position.answers[i]}</span>
         </label><br>`;
       $('.js-answers').append(answerHTML);
