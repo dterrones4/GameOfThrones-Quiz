@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Game of Thrones Quiz</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <link rel="stylesheet" href="float-grid.css" type="text/css" />
+  </head>
+  <body>
+  
+  <header role = 'banner'>
+    <h1 class='center row'>Game of Thrones Quiz</h1>
+  </header>
+ <main role = 'main'>
+  <section id="start-screen" class=''>
+    <p>Ready to take your Quiz? Click on Start to begin.</p>
+    <input type='button' value='Start' id='startBtn' class='btn start-btn'>
+  </section>
+  
+  <section role ='region' id="quiz-screen" class="quiz-section hidden">
+    <form>
+      <h3 class ='js-question-text question txt'></h3>
+      <div class= 'js-answers'>
+      </div>
+      <button id='submit-answer' type="submit" class='btn js-submit'>Submit answer</button>
+      <div class='score'>Score:0/0</div>
+    </form>
+  </section>
+  
+  <div class="modal">
+    <div class="modal-content">
+      <h2></h2>
+      <img src="" alt="">
+      <a class='close-modal' href='#'>X</a>
+    </div>
+  </div>
+  
+  <section  role ='region' class="score-section quiz-section hidden">
+    <div class='js-results center txt'></div>
+    <input type='button' class='btn' value='Try Again' id='try-again'>
+  </section>
+  </main> 
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  </body>
+</html>
